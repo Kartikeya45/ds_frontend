@@ -67,5 +67,6 @@ export default function Contacts({ user, setSelected }) {
     const response = await MessageService.postMessage(newMessageObject);
     console.log(response.status);
     getContacts();
+    setNewContact("");
   }
 }

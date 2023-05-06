@@ -9,7 +9,7 @@ export default function ChatNew({ user, selected }) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       getMessages();
-    }, 10000);
+    }, 100);
     return () => clearInterval(intervalId);
   }, [user, receiver]);
 
